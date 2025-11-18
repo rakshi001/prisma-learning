@@ -27,3 +27,11 @@ model User{
 //   task           String   
 //   description    String
 // }
+
+
+model Todo{
+  id              Int     @default(autoincrement())   @id
+  task            String
+  description     String?
+  done            Boolean
+  }
